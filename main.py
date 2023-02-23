@@ -227,4 +227,4 @@ async def leaderboard(ctx):
                 em.add_field(name=f"{count}. {user.name}", value=f"Level: `{table[0]}` | XP: `{table[1]}`", inline=False)
                 return await ctx.respond(embed=em)
 
-bot.run("")
+bot.run(os.environ.get("TOKEN"))
